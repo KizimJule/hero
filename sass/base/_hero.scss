@@ -1,9 +1,10 @@
 .hero {
   position: relative;
   height: 502px;
+  min-width: 320px;
   max-width: 480px;
   background-color: #ffb8ca;
-  padding-top: 83px;
+  //   padding-top: 83px;
 
   @media (min-width: 768px) {
     height: 416px;
