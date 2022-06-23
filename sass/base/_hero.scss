@@ -1,53 +1,15 @@
-h1,
-h2,
-h3,
-p,
-ul {
-  margin: 0;
-  padding-left: 0;
-}
-
-ul {
-  list-style: none;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 .hero {
   position: relative;
   height: 502px;
   width: 320px;
   background-color: #ffb8ca;
   padding-top: 83px;
-}
 
-@media (min-width: 768px) {
-  .hero {
+  @media (min-width: 768px) {
     height: 416px;
     width: 768px;
   }
-}
-
-@media (min-width: 1280px) {
-  .hero {
+  @media (min-width: 1280px) {
     height: 664px;
     width: 1280px;
   }
@@ -57,90 +19,69 @@ img {
   position: absolute;
   top: 83px;
   right: 0;
-}
 
-@media (min-width: 768px) {
-  .hero__img-ellipse {
+  @media (min-width: 768px) {
     top: 43px;
     left: 248px;
     width: 335px;
     height: 333px;
   }
-}
-
-@media (min-width: 1280px) {
-  .hero__img-ellipse {
+  @media (min-width: 1280px) {
     width: 534px;
     height: 534px;
+    // left: 517px;
     left: 557px;
     top: 54px;
   }
 }
-
 .hero__img-icecream {
   position: absolute;
   bottom: 0;
   left: 117px;
   z-index: 10;
-}
 
-@media (min-width: 768px) {
-  .hero__img-icecream {
+  @media (min-width: 768px) {
     left: 322px;
     width: 143px;
     height: 336px;
   }
-}
-
-@media (min-width: 1280px) {
-  .hero__img-icecream {
+  @media (min-width: 1280px) {
     width: 236px;
     height: 557px;
+    // left: 636px;
     left: 676px;
     bottom: 0;
   }
 }
-
-@media (min-width: 320px) and (max-width: 767.98px) {
-  .hero__img-girl {
+.hero__img-girl {
+  @media (min-width: 320px) and (max-width: 767.98px) {
     display: none;
   }
-}
-
-@media (min-width: 768px) {
-  .hero__img-girl {
+  @media (min-width: 768px) {
     position: absolute;
     bottom: 0;
     left: 546px;
   }
-}
-
-@media (min-width: 1280px) {
-  .hero__img-girl {
+  @media (min-width: 1280px) {
     width: 304px;
     height: 241px;
+    // left: 880px;
     left: 920px;
   }
 }
-
-@media (min-width: 320px) and (max-width: 767.98px) {
-  .hero__img-milk {
+.hero__img-milk {
+  @media (min-width: 320px) and (max-width: 767.98px) {
     display: none;
   }
-}
-
-@media (min-width: 768px) {
-  .hero__img-milk {
+  @media (min-width: 768px) {
     position: absolute;
     left: 32px;
     top: 246px;
   }
-}
-
-@media (min-width: 1280px) {
-  .hero__img-milk {
+  @media (min-width: 1280px) {
     width: 213px;
     height: 216px;
+    // left: 16px;
     left: 56px;
     top: 388px;
   }
@@ -152,23 +93,18 @@ img {
   left: 32px;
   z-index: 20;
   width: 218px;
-}
 
-@media (min-width: 768px) {
-  .hero__thumb {
+  @media (min-width: 768px) {
     top: 102px;
     width: 162px;
   }
-}
-
-@media (min-width: 1280px) {
-  .hero__thumb {
+  @media (min-width: 1280px) {
+    // left: 16px;
     left: 56px;
     top: 147px;
     width: 277px;
   }
 }
-
 .hero__title {
   font-family: 'Titan One', sans-serif;
   margin-bottom: 20px;
@@ -178,45 +114,30 @@ img {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   font-weight: 400;
-}
 
-@media (min-width: 768px) {
-  .hero__title {
+  @media (min-width: 768px) {
     font-size: 22px;
   }
-}
-
-@media (min-width: 1280px) {
-  .hero__title {
+  @media (min-width: 1280px) {
     font-size: 38px;
   }
 }
-
 .hero__title--pink {
   color: #d41443;
   font-size: 48px;
   line-height: 1.15;
-}
 
-@media (min-width: 768px) {
-  .hero__title--pink {
+  @media (min-width: 768px) {
     font-size: 34px;
     line-height: 0.9;
   }
-}
-
-@media (min-width: 1280px) {
-  .hero__title--pink {
+  @media (min-width: 1280px) {
     font-size: 58px;
   }
 }
-
 .button--thumb {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .button {
   display: block;
   font-family: 'DM Sans', sans-serif;
@@ -228,81 +149,61 @@ img {
   border: none;
   letter-spacing: 0.04em;
   cursor: pointer;
-}
 
-@media (min-width: 1280px) {
-  .button {
+  @media (min-width: 1280px) {
     font-size: 14px;
     line-height: 1.3;
   }
 }
-
 .button--pink {
   margin-right: 8px;
   background-color: #d41443;
   color: #ffffff;
   padding: 7px 13.3px;
-}
 
-@media (min-width: 1280px) {
-  .button--pink {
+  @media (min-width: 1280px) {
     padding: 10.9px 22.16px;
     margin-right: 12px;
   }
 }
-
 .button--white {
   background-color: #fff;
   color: #d41443;
   padding: 7px 11.3px;
-}
 
-.button--white:hover, .button--white:focus {
-  background-color: #ecebeb;
-}
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
 
-@media (min-width: 1280px) {
-  .button--white {
+  @media (min-width: 1280px) {
     padding: 10.9px 16.36px;
   }
 }
 
-@media (min-width: 320px) and (max-width: 767.98px) {
-  .hero-desk {
+.hero-desk {
+  @media (min-width: 320px) and (max-width: 767.98px) {
     display: none;
   }
-}
-
-@media (min-width: 768px) {
-  .hero-desk {
+  @media (min-width: 768px) {
     position: absolute;
     top: 287px;
     left: 184px;
     z-index: 10;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
     width: 114px;
   }
-}
-
-@media (min-width: 1280px) {
-  .hero-desk {
+  @media (min-width: 1280px) {
+    // left: 229px;
     left: 269px;
     top: 456px;
     width: 200px;
   }
 }
-
-@media (min-width: 768px) {
-  .hero-text {
+.hero-text {
+  @media (min-width: 768px) {
     font-family: 'DM Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -311,57 +212,39 @@ img {
     color: #ffffff;
     margin-bottom: 7px;
   }
-}
-
-@media (min-width: 1280px) {
-  .hero-text {
+  @media (min-width: 1280px) {
     font-size: 14px;
     line-height: 1.43;
   }
 }
-
-@media (min-width: 1280px) {
-  .desk__img-arrow {
+.desk__img-arrow {
+  @media (min-width: 1280px) {
     width: 26px;
     height: 26px;
   }
 }
 
-@media (min-width: 320px) and (max-width: 767.98px) {
-  .stat {
+.stat {
+  @media (min-width: 320px) and (max-width: 767.98px) {
     display: none;
   }
-}
-
-@media (min-width: 768px) {
-  .stat {
+  @media (min-width: 768px) {
     position: absolute;
     top: 94px;
     left: 693px;
   }
-}
-
-@media (min-width: 1280px) {
-  .stat {
+  @media (min-width: 1280px) {
+    // left: 1112px;
     left: 1152px;
   }
 }
-
 .stat__item {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
   margin-bottom: 17px;
 }
-
 .stat--big {
   font-family: 'Titan One', sans-serif;
   font-style: normal;
@@ -372,10 +255,8 @@ img {
   text-transform: uppercase;
   color: #d41443;
   z-index: 10;
-}
 
-@media (min-width: 1280px) {
-  .stat--big {
+  @media (min-width: 1280px) {
     font-size: 46px;
   }
 }
@@ -387,17 +268,13 @@ img {
   font-size: 8px;
   line-height: 1.25;
   color: #ffffff;
-}
 
-@media (min-width: 1280px) {
-  .stat--smol {
+  @media (min-width: 1280px) {
     font-size: 14px;
   }
 }
-
 .stat__img-ell {
   position: absolute;
   top: -3px;
   right: -7px;
 }
-/*# sourceMappingURL=main.css.map */
