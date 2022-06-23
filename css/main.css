@@ -11,6 +11,10 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -34,7 +38,7 @@ img {
 .hero {
   position: relative;
   height: 502px;
-  width: 320px;
+  max-width: 480px;
   background-color: #ffb8ca;
   padding-top: 83px;
 }
@@ -42,14 +46,14 @@ img {
 @media (min-width: 768px) {
   .hero {
     height: 416px;
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media (min-width: 1280px) {
   .hero {
     height: 664px;
-    width: 1280px;
+    max-width: 1280px;
   }
 }
 
@@ -80,8 +84,8 @@ img {
 .hero__img-icecream {
   position: absolute;
   bottom: 0;
-  left: 117px;
   z-index: 10;
+  right: 32px;
 }
 
 @media (min-width: 768px) {
@@ -101,7 +105,7 @@ img {
   }
 }
 
-@media (min-width: 320px) and (max-width: 767.98px) {
+@media (max-width: 767.98px) {
   .hero__img-girl {
     display: none;
   }
@@ -123,7 +127,7 @@ img {
   }
 }
 
-@media (min-width: 320px) and (max-width: 767.98px) {
+@media (max-width: 767.98px) {
   .hero__img-milk {
     display: none;
   }
@@ -211,7 +215,7 @@ img {
   }
 }
 
-.button--thumb {
+.button__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,8 +241,17 @@ img {
   }
 }
 
+.button__item + .button__item {
+  margin-left: 8px;
+}
+
+@media (min-width: 1280px) {
+  .button__item + .button__item {
+    margin-left: 12px;
+  }
+}
+
 .button--pink {
-  margin-right: 8px;
   background-color: #d41443;
   color: #ffffff;
   padding: 7px 13.3px;
@@ -247,7 +260,6 @@ img {
 @media (min-width: 1280px) {
   .button--pink {
     padding: 10.9px 22.16px;
-    margin-right: 12px;
   }
 }
 
@@ -267,7 +279,7 @@ img {
   }
 }
 
-@media (min-width: 320px) and (max-width: 767.98px) {
+@media (max-width: 767.98px) {
   .hero-desk {
     display: none;
   }
@@ -327,7 +339,7 @@ img {
   }
 }
 
-@media (min-width: 320px) and (max-width: 767.98px) {
+@media (max-width: 767.98px) {
   .stat {
     display: none;
   }
