@@ -165,10 +165,16 @@
     margin-left: 12px;
   }
 }
+
 .button--pink {
   background-color: #d41443;
   color: #ffffff;
   padding: 7px 13.3px;
+
+  &:hover,
+  &:focus {
+    background-color: #e17992;
+  }
 
   @media (min-width: 1280px) {
     padding: 10.9px 22.16px;
@@ -284,5 +290,12 @@
 .stat__img-ell {
   position: absolute;
   top: -3px;
-  right: -7px;
+  right: -7.3px;
+
+  @media (min-width: 1280px) {
+    width: 30px;
+    height: 30px;
+    top: -7px;
+    right: -12px;
+  }
 }

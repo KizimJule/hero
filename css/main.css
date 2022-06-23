@@ -257,6 +257,10 @@ img {
   padding: 7px 13.3px;
 }
 
+.button--pink:hover, .button--pink:focus {
+  background-color: #e17992;
+}
+
 @media (min-width: 1280px) {
   .button--pink {
     padding: 10.9px 22.16px;
@@ -410,6 +414,15 @@ img {
 .stat__img-ell {
   position: absolute;
   top: -3px;
-  right: -7px;
+  right: -7.3px;
+}
+
+@media (min-width: 1280px) {
+  .stat__img-ell {
+    width: 30px;
+    height: 30px;
+    top: -7px;
+    right: -12px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
